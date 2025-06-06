@@ -238,3 +238,83 @@
     </div>
   </div>
 </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casual Creation - Purple Kurti</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #fefefe;
+      color: #333;
+    }
+    .kurti {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      margin: auto;
+      max-width: 400px;
+      background: #fff0f5;
+    }
+    .kurti img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .cod, .upi {
+      padding: 10px;
+      background: #4caf50;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .upi {
+      background: #673ab7;
+    }
+    .upi-img {
+      max-width: 150px;
+      display: block;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center;">Casual Creation</h1>
+
+  <div class="kurti">
+    <img src="purple-kurti.jpg" alt="Purple Plain Kurti">
+    <div class="price">Purple Plain Kurti - ₹209</div>
+    <div class="buttons">
+      <!-- COD WhatsApp Button -->
+      <a href="https://wa.me/917039097018?text=I%20want%20to%20order%20Purple%20Plain%20Kurti%20on%20Cash%20on%20Delivery" class="cod">
+        Cash on Delivery
+      </a>
+
+      <!-- UPI Payment Button -->
+      <a href="upi://pay?pa=9305627049@paytm&pn=Casual%20Creation&tn=Purple%20Kurti%20Payment&am=209" class="upi">
+        Pay ₹209 via UPI
+      </a>
+
+      <!-- Optional QR Code -->
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=9305627049@paytm&pn=Casual%20Creation&tn=Purple%20Kurti%20Payment&am=209" alt="Pay via UPI" class="upi-img" />
+    </div>
+  </div>
+
+</body>
+</html>

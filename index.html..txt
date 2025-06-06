@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casual Creation - Kurti Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .header {
+      background: black;
+      color: white;
+      padding: 20px;
+    }
+    .logo {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    .product-box {
+      background: white;
+      margin: 20px;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px #ccc;
+    }
+    .product-box img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .price {
+      font-size: 22px;
+      color: green;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+    .upi-section {
+      margin-top: 15px;
+    }
+    .upi-section img {
+      width: 160px;
+      border: 2px solid #000;
+      border-radius: 10px;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: green;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .details {
+      font-size: 16px;
+      color: #444;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="sc-logo.png" alt="SC Logo" class="logo">
+    <h1>Casual Creation</h1>
+    <p>Stylish Kurtis • Affordable Price</p>
+  </div>
+
+  <div class="product-box">
+    <img src="kurti.jpg" alt="Kurti Image">
+    <p class="price">₹209 Only</p>
+    <p class="details">Available in 5 Colors | Cash on Delivery</p>
+
+    <div class="upi-section">
+      <p><strong>Scan & Pay via UPI</strong></p>
+      <img src="upi-qr.png" alt="Upi 9305627049@fam Code">
+    </div>
+
+    <a class="whatsapp-btn" href="https://wa.me/917039097018" target="_blank">
+      📱 Order on WhatsApp
+    </a>
+  </div>
+
+</body>
+</html>

@@ -140,3 +140,90 @@
 
 </body>
         </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casual Creation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      background: #fefefe;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #c2185b;
+    }
+    .kurti {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px 0;
+      background: #fff0f5;
+    }
+    .kurti img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .cod, .upi {
+      padding: 10px;
+      background: #4caf50;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .upi-img {
+      max-width: 150px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Casual Creation</h1>
+
+  <!-- Example Kurti 1 -->
+  <div class="kurti">
+    <img src="kurti1.jpg" alt="Kurti 1">
+    <div class="price">Price: ₹209</div>
+    <div class="buttons">
+      <a href="https://wa.me/917039097018?text=I%20want%20Kurti%201%20Cash%20on%20Delivery" class="cod">Cash on Delivery</a>
+      <div>
+        <div class="upi">Pay via UPI</div>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=9305627049@paytm&size=150x150" alt="UPI QR" class="upi-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Example Kurti 2 -->
+  <div class="kurti">
+    <img src="kurti2.jpg" alt="Kurti 2">
+    <div class="price">Price: ₹215</div>
+    <div class="buttons">
+      <a href="https://wa.me/917039097018?text=I%20want%20Kurti%202%20Cash%20on%20Delivery" class="cod">Cash on Delivery</a>
+      <div>
+        <div class="upi">Pay via UPI</div>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=9305627049@paytm&size=150x150" alt="UPI QR" class="upi-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more kurtis below in same format -->
+  <!-- Change image src, price and WhatsApp message -->
+</body>
+</html>

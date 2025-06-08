@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Form - Casual Creation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+    .form-container {
+      max-width: 500px;
+      background: white;
+      padding: 20px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background: #28a745;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Welcome Sir // Please Your Details Info!!</h2>
+  <form action="#" method="post">
+    <label for="name">Name >></label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="age">Age >>>></label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="state">State >></label>
+    <input type="text" id="state" name="state" required>
+
+    <label for="work">Work from (Online/Offline) >></label>
+    <select id="work" name="work">
+      <option value="online">Online</option>
+      <option value="offline">Offline</option>
+      <option value="both">Both</option>
+    </select>
+
+    <label for="time">Part-time / Full-time >></label>
+    <select id="time" name="time">
+      <option value="part-time">Part-time</option>
+      <option value="full-time">Full-time</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>

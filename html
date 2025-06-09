@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Casual Creation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      text-align: center;
+      padding: 20px;
+    }
+    header {
+      background: black;
+      color: goldenrod;
+      padding: 20px 10px;
+    }
+    .kurti {
+      background: white;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: 300px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .kurti img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .price {
+      font-size: 18px;
+      margin: 10px 0;
+      color: green;
+    }
+    button {
+      margin: 5px;
+      padding: 8px 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+    input {
+      margin: 5px;
+      padding: 8px;
+      width: 90%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .upi-box {
+      font-weight: bold;
+      margin: 10px 0;
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Casual Creation</h1>
+  <img src="sc-logo.png" alt="SC Logo" width="100">
+</header>
+
+<!-- Start of Kurtis -->
+<div class="kurti">
+  <img src="kurti1.jpg" alt="Red Kurti">
+  <p class="price">Price: ₹209</p>
+  <button onclick="toggleOptions(1)">Buy</button>
+  <div id="options1" class="hidden">
+    <button onclick="showUPI(1)">UPI</button>
+    <button onclick="showCOD(1)">Cash on Delivery</button>
+    <div id="upi1" class="upi-box hidden">
+      <img src="qr.png" width="150"><br>
+      UPI: 9305627049@paytm
+    </div>
+    <div id="cod1" class="hidden">
+      <input type="text" id="name1" placeholder="Full Name"><br>
+      <input type="text" id="state1" placeholder="State"><br>
+      <input type="text" id="village1" placeholder="Village"><br>
+      <input type="text" id="house1" placeholder="House No."><br>
+      <input type="text" id="watermark1" placeholder="Watermark"><br>
+      <button onclick="placeOrder(1)">Order Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Kurti 2 to Kurti 5 Copy Paste -->
+<div class="kurti">
+  <img src="kurti2.jpg" alt="Green Kurti">
+  <p class="price">Price: ₹215</p>
+  <button onclick="toggleOptions(2)">Buy</button>
+  <div id="options2" class="hidden">
+    <button onclick="showUPI(2)">UPI</button>
+    <button onclick="showCOD(2)">Cash on Delivery</button>
+    <div id="upi2" class="upi-box hidden">
+      <img src="qr.png" width="150"><br>
+      UPI: 9305627049@paytm
+    </div>
+    <div id="cod2" class="hidden">
+      <input type="text" id="name2" placeholder="Full Name"><br>
+      <input type="text" id="state2" placeholder="State"><br>
+      <input type="text" id="village2" placeholder="Village"><br>
+      <input type="text" id="house2" placeholder="House No."><br>
+      <input type="text" id="watermark2" placeholder="Watermark"><br>
+      <button onclick="placeOrder(2)">Order Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Similarly add for kurti3, kurti4, kurti5 -->
+
+<script>
+  function toggleOptions(id) {
+    document.getElementById('options' + id).classList.toggle('hidden');
+  }
+  function showUPI(id) {
+    document.getElementById('upi' + id).classList.toggle('hidden');
+  }
+  function showCOD(id) {
+    document.getElementById('cod' + id).classList.toggle('hidden');
+  }
+  function placeOrder(id) {
+    const name = document.getElementById('name' + id).value;
+    const state = document.getElementById('state' + id).value;
+    const village = document.getElementById('village' + id).value;
+    const house = document.getElementById('house' + id).value;
+    const watermark = document.getElementById('watermark' + id).value;
+    
+    const message = `*New Order from Casual Creation*%0AName: ${name}%0AState: ${state}%0AVillage: ${village}%0AHouse No.: ${house}%0AWatermark: ${watermark}`;
+    
+    window.open(`https://wa.me/917039097018?text=${message}`, '_blank');
+  }
+</script>
+
+</body>
+</html>
